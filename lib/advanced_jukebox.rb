@@ -35,7 +35,7 @@ def play(my_songs)
   user_input = gets.chomp
   if my_songs.include?(user_input)
     value = my_songs.values_at(user_input).join("")
-    system(start value)
+    system(start value) #Need to figure out how to open audio file
   else
     puts "Invalid input!"
   end
